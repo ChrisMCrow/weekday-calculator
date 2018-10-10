@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for src/date.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../prettify.css" />
+    <link rel="stylesheet" href="../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../index.html">all files</a> / <a href="index.html">src/</a> date.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">50% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>8/16</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">12.5% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>1/8</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">33.33% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>3/9</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>1/1</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line medium'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1</td><td class="line-coverage quiet"><span class="cline-any cline-yes">1×</span></td><td class="text"><pre class="prettyprint lang-js">!function(e){var t={};function n(a){<span class="missing-if-branch" title="if path not taken" >I</span>if(t[a])<span class="cstat-no" title="statement not covered" >return t[a].exports;v</span>ar d=t[a]={i:a,l:!1,exports:{}};return e[a].call(d.exports,d,d.exports,n),d.l=!0,d.exports}n.m=e,n.c=t,n.d=<span class="fstat-no" title="function not covered" >function(e,t,a){<span class="cstat-no" title="statement not covered" ></span>n.o(e,t)||Object.defineProperty(e,t,{configurable:!1,enumerable:!0,get:a})}</span>,n.r=<span class="fstat-no" title="function not covered" >function(e){<span class="cstat-no" title="statement not covered" ></span>Object.defineProperty(e,"__esModule",{value:!0})}</span>,n.n=<span class="fstat-no" title="function not covered" >function(e){<span class="cstat-no" title="statement not covered" ></span>var t=e&amp;&amp;e.__esModule?<span class="fstat-no" title="function not covered" >function(){<span class="cstat-no" title="statement not covered" ></span>return e.default}</span>:<span class="fstat-no" title="function not covered" >function(){<span class="cstat-no" title="statement not covered" ></span>return e}</span>;<span class="cstat-no" title="statement not covered" >r</span>eturn n.d(t,"a",t),t}</span>,n.o=<span class="fstat-no" title="function not covered" >function(e,t){<span class="cstat-no" title="statement not covered" ></span>return Object.prototype.hasOwnProperty.call(e,t)}</span>,n.p="/var/folders/zz/zyxvpxvq6csfxvn_n00000s4000069/T/_karma_webpack_/",n(n.s=12)}({12:function(module,exports,__webpack_require__){"use strict";eval('\n\nObject.defineProperty(exports, "__esModule", {\n    value: true\n});\nexports.thisDate = thisDate;\nexports.dateToDay = dateToDay;\nfunction thisDate() {\n    var today = new Date(2018, 9, 10);\n    console.log(today.getFullYear() + " " + today.getMonth() + " " + today.getDate() + " " + dateToDay(today));\n\n    return today.getDay();\n}\n\nfunction dateToDay(date) {\n    var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];\n    var returnDay = days[date.getDay()];\n    return returnDay;\n}//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9zcmMvZGF0ZS5qcz9mMTdmIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7Ozs7O1FBQ2dCO1FBT0E7QUFQVCxvQkFDSDtRQUFJLFFBQVEsSUFBSSxLQUFLLE1BQU0sR0FDM0I7WUFBYSxJQUFFLE1BQW9CLHNCQUFHLE1BQWlCLG1CQUFHLE1BQWdCLGtCQUFHLFVBRTdFOztXQUFPLE1BQ1Y7QUFFRDs7QUFBTyxtQkFBbUIsTUFDdEI7UUFBTSxPQUFPLENBQUMsVUFBVSxVQUFVLFdBQVcsYUFBYSxZQUFZLFVBQ3RFO1FBQUksWUFBWSxLQUFLLEtBQ3JCO1dBQ0giLCJmaWxlIjoiMTIuanMiLCJzb3VyY2VzQ29udGVudCI6WyJcbmV4cG9ydCBmdW5jdGlvbiB0aGlzRGF0ZSgpIHtcbiAgICBsZXQgdG9kYXkgPSBuZXcgRGF0ZSgyMDE4LCA5LCAxMCk7XG4gICAgY29uc29sZS5sb2coYCR7dG9kYXkuZ2V0RnVsbFllYXIoKX0gJHt0b2RheS5nZXRNb250aCgpfSAke3RvZGF5LmdldERhdGUoKX0gJHtkYXRlVG9EYXkodG9kYXkpfWApO1xuXG4gICAgcmV0dXJuIHRvZGF5LmdldERheSgpO1xufVxuXG5leHBvcnQgZnVuY3Rpb24gZGF0ZVRvRGF5KGRhdGUpIHtcbiAgICBjb25zdCBkYXlzID0gW1wiU3VuZGF5XCIsIFwiTW9uZGF5XCIsIFwiVHVlc2RheVwiLCBcIldlZG5lc2RheVwiLCBcIlRodXJzZGF5XCIsIFwiRnJpZGF5XCIsIFwiU2F0dXJkYXlcIl07XG4gICAgbGV0IHJldHVybkRheSA9IGRheXNbZGF0ZS5nZXREYXkoKV07XG4gICAgcmV0dXJuIHJldHVybkRheTtcbn0iXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///12\n')}});</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Wed Oct 10 2018 09:18:42 GMT-0700 (PDT)
+</div>
+</div>
+<script src="../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../sorter.js"></script>
+</body>
+</html>
